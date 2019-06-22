@@ -3,12 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>CS193x Final Project</title>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <script src="/js/script.js" defer></script>
-    </script>
+    <title>Final Project: Diary</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/prompts.js" defer></script>
+    <script src="js/menuscreen.js" defer></script>
+    <script src="js/diaryscreen.js" defer></script>
+    <script src="js/page.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+    <section id="menu">
+      <div class="title">Create a Daily Journal</div>
+      <div class="subtitle">Note: Your journal will be viewable and editable to anyone who has the link!</div>
+      <button type="button" id="create">CREATE A NEW JOURNAL</button>
+    </section>
+
+    <section id="diary" class="inactive">
+        <div class="title" id="date"></div>
+        <div class="subtitle" id="prompt">List the .....</div>
+        <textarea id="contents"></textarea>
+        
+      <div id="first" class="bar">
+        <button type="button" id="previous" class="icon"></button>
+        <button type="button" id="home">Home</button>
+        <button type="button" id="next" class="icon"></button>
+      </div>
+
+      <div id="second" class="inactive">
+        <button type="button" id="checked" class="icon"></button>
+      </div>
+    </section>
   </body>
 </html>
